@@ -5,7 +5,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import { FaMapPin } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
-// import CursorBalls from "../components/cursorBalls";
+import { FaLinkedin, FaTwitter, FaGithub, FaMailBulk } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -182,6 +182,8 @@ export default function Home() {
             </div>
           </div>
 
+          {/* <div className="divider" /> */}
+
           <h2 className="subheading mb-5">Technical Skills</h2>
           <div class="skills-container mt-[20px]">
             <div class="skill-column">
@@ -190,11 +192,11 @@ export default function Home() {
               <p class="skill-item">Typescript</p>
               <p class="skill-item">Python</p>
               <p class="skill-item">Rust</p>
+              <p class="skill-item">Solidity</p>
               <p class="skill-item">PHP</p>
               <p class="skill-item">Java</p>
               <p class="skill-item">SQL</p>
-              <p class="skill-item">HTML</p>
-              <p class="skill-item">CSS</p>
+              <p class="skill-item">HTML/CSS</p>
             </div>
 
             <div class="skill-column">
@@ -237,7 +239,65 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="divider" />
+
           <h2 className="subheading mb-5">Contact</h2>
+          <div class="contact-container">
+            <div class="contact-item">
+              <FaTwitter size={20} />
+              <p class="contact-heading">
+                Twitter{" "}
+                <Link
+                  href="https://twitter.com/0xC02_"
+                  target="_blank"
+                  className="border-b-[1px] border-current pb-[-1px] opacity-[0.99]"
+                >
+                  0xC02
+                </Link>
+              </p>
+            </div>
+            <div class="contact-item">
+              <FaGithub size={20} />
+              <p class="contact-heading">GitHub</p>
+              <p class="contact-text">
+                <Link
+                  href="https://github.com/KhalilJouaneh"
+                  target="_blank"
+                  className="border-b-[1px] border-current pb-[-1px] opacity-[0.99]"
+                >
+                  KhalilJouaneh
+                </Link>
+              </p>
+            </div>
+            <div class="contact-item">
+              <FaLinkedin size={20} />
+              <p class="contact-heading">LinkedIn</p>
+              <p class="contact-text">
+                {" "}
+                <Link
+                  href="https://www.linkedin.com/in/khaliljouaneh/"
+                  target="_blank"
+                  className="border-b-[1px] border-current pb-[-1px] opacity-[0.99]"
+                >
+                  KhalilJouaneh
+                </Link>
+              </p>
+            </div>
+            <div class="contact-item">
+              <FaMailBulk size={20} />
+              <p class="contact-heading">Email</p>
+              <p class="contact-text">
+                {" "}
+                <Link
+                  href="mailto:khalil.j448@gmail.com"
+                  target="_blank"
+                  className="border-b-[1px] border-current pb-[-1px] opacity-[0.99]"
+                >
+                  khalil.j4484@gmail.com
+                </Link>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </>

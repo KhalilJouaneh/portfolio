@@ -12,7 +12,8 @@
 }
 
 .navbar-items {
-  font-family: "Poppins";
+  /* font-family: "Poppins"; */
+  font-family: "Noto Sans", sans-serif;
   font-style: normal;
   color: white;
   font-weight: 500;
