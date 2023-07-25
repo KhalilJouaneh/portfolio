@@ -1,0 +1,44 @@
+.navbar-container {
+  background-color: rgba(17, 17, 17, 255);
+  width: 100%;
+  z-index: 1000;
+  height: 100px;
+}
+
+.alpha-labs-logo {
+  width: 75%;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.navbar-items {
+  font-family: "Poppins";
+  font-style: normal;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.alpha-labs-logo:hover {
+  opacity: 0.6;
+}
+
+.twitter-logo {
+  margin-right: 20px;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.twitter-logo:hover {
+  opacity: 0.6;
+}
+
+.discord-logo {
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.discord-logo:hover {
+  opacity: 0.6;
+}

@@ -2,26 +2,120 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  font-family: "Noto Sans", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.everything {
+  background-color: rgba(17, 17, 17, 255);
+  height: 100vh;
+  width: 100%;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.main-container {
+  color: #f0f0f0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.degen-ape {
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+  transition: box-shadow 0.4s ease-in-out; /* Smooth transition for the box-shadow effect */
+  cursor: pointer;
+}
+
+.degen-ape:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); /* Increased glow on hover */
+}
+
+.name-heading {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  letter-spacing: 0.1rem;
+  margin-top: 40px;
+  font-size: 33px;
+  color: #f0f0f0;
+  font-weight: 700;
+}
+
+.intro {
+  /* font-family: Poppins; */
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 15px;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  max-width: 470px;
+}
+
+.intro span {
+  color: #969696;
+}
+
+.location {
+  border: 1px solid #969696;
+  border-radius: 6px;
+  margin-top: 25px;
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  max-width: 470px;
+}
+
+.location-text {
+  font-weight: 600;
+  font-size: 15px;
+  margin-left: 15px;
+  color: #969696;
+}
+
+.location-text span {
+  color: #f0f0f0;
+}
+
+.divider {
+  border: 1px solid #969696;
+  border-radius: 1px;
+  margin-top: 50px;
+  max-width: 600px;
+}
+
+.vertical-navbar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-size: 13.125px;
+  margin-left: 50px;
+  line-height: 1.5rem;
+  padding: 10px;
+  gap: 0.75rem;
+}
+
+.intro-location-container {
+  display: flex;
+}
+
+.subheading {
+  font-size: 21.6px;
+  color: #f0f0f0;
+  margin-top: 50px;
+  line-height: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+.work-intro {
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 15px;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  max-width: 600px;
+  color: #969696;
+}
+
+.work-intro span {
+  color: #f0f0f0
 }
