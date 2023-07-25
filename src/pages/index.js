@@ -62,18 +62,17 @@ export default function Home() {
             </div>
 
             <div className="vertical-navbar">
-              <Link href="/">Work</Link>
-              <Link href="/">Projects</Link>
-              <Link href="/">Skills</Link>
+              <Link href="#work">Work</Link>
+              <Link href="#skills">Skills</Link>
+              <Link href="#projects">Projects</Link>
               <Link href="/">Resume</Link>
-              <Link href="/">Contact</Link>
-              <Link href="/">Writing</Link>
+              <Link href="#contact">Contact</Link>
             </div>
           </div>
 
           <div className="divider" />
 
-          <div className="work-container">
+          <div className="work-container" id="work">
             <h2 className="subheading"> Work </h2>
             <p className="work-intro">
               <span>Presently</span>, I'm spearheading a startup, backed by an
@@ -180,7 +179,7 @@ export default function Home() {
 
           {/* <div className="divider" /> */}
 
-          <h2 className="subheading mb-5">Technical Skills</h2>
+          <h2 className="subheading mb-5" id="skills">Technical Skills</h2>
           <div class="skills-container mt-[20px]">
             <div class="skill-column">
               <p class="skill-heading">Languages</p>
@@ -235,7 +234,7 @@ export default function Home() {
             </div>
           </div>
           {/* <div className="divider mb-10" /> */}
-          <h2 className="subheading mb-5">Projects</h2>
+          <h2 className="subheading mb-5" id="projects">Projects</h2>
 
           <div className="project-container">
             <Link
@@ -358,7 +357,7 @@ export default function Home() {
 
           <div className="divider" />
 
-          <h2 className="subheading mb-5">Contact</h2>
+          <h2 className="subheading mb-5" id="contact">Contact</h2>
           <div class="contact-container">
             <div class="contact-item">
               <FaTwitter size={20} />

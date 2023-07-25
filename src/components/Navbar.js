@@ -14,7 +14,7 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center mr-5">
-            Twitter
+            {/* Twitter */}
           </div>
         </div>
       </nav>

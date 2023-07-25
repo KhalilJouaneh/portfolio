@@ -6,6 +6,10 @@
   font-family: "Noto Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .everything {
   background-color: rgba(17, 17, 17, 255);
   height: 100%;
@@ -291,4 +295,51 @@
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   border-radius: 24px;
   transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+@media (max-width: 768px) {
+  .everything {
+    background-color: rgba(17, 17, 17, 255);
+    height: 100%;
+    width: 200%;
+  }
+  .footer {
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .footer-text-left,
+  .footer-text-right {
+    position: absolute;
+  }
+
+  .footer-text-left {
+    left: 3px;
+    bottom: 29%;
+    color: rgba(255, 255, 255, 0.95);
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+  }
+
+  .footer-text-right {
+    right: 3px;
+    bottom: 29%;
+    color: white;
+    font-family: "Poppins";
+    font-style: normal;
+    font-size: 10px;
+  }
+
+  .footer-line {
+    margin-top: 300px;
+    margin-bottom: 100px;
+    border-top: 3px solid rgba(251, 251, 251, 0.51);
+    border-radius: 24px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
 }
