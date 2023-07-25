@@ -5,7 +5,13 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import { FaMapPin } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
-import { FaLinkedin, FaTwitter, FaGithub, FaMailBulk } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaTwitter,
+  FaGithub,
+  FaMailBulk,
+  FaArrowRight,
+} from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -90,15 +96,13 @@ export default function Home() {
             <div className="job-container">
               <div className="job-position">
                 <p>
-                  <Link href="https://alphaline.wtf/" target="_blank">
-                    <div className="flex items-center">
-                      Alphaline{" "}
-                      <FiExternalLink
-                        className="ml-1"
-                        color="white"
-                        size={15}
-                      />
-                    </div>
+                  <Link
+                    href="https://alphaline.wtf/"
+                    target="_blank"
+                    className="flex items-center"
+                  >
+                    Alphaline{" "}
+                    <FiExternalLink className="ml-1" color="white" size={15} />
                   </Link>
                   <span>
                     {" "}
@@ -111,15 +115,13 @@ export default function Home() {
             <div className="job-container">
               <div className="job-position">
                 <p>
-                  <Link href="https://helius.xyz/" target="_blank">
-                    <div className="flex items-center">
-                      Helius{" "}
-                      <FiExternalLink
-                        className="ml-1"
-                        color="white"
-                        size={15}
-                      />
-                    </div>
+                  <Link
+                    href="https://helius.xyz/"
+                    target="_blank"
+                    className="flex items-center"
+                  >
+                    Helius{" "}
+                    <FiExternalLink className="ml-1" color="white" size={15} />
                   </Link>{" "}
                   <span> Developer Relations </span>
                 </p>
@@ -129,15 +131,13 @@ export default function Home() {
             <div className="job-container">
               <div className="job-position">
                 <p>
-                  <Link href="https://infograph.com.jo/" target="_blank">
-                    <div className="flex items-center">
-                      Infograph{" "}
-                      <FiExternalLink
-                        className="ml-1"
-                        color="white"
-                        size={15}
-                      />
-                    </div>
+                  <Link
+                    href="https://infograph.com.jo/"
+                    target="_blank"
+                    className="flex items-center"
+                  >
+                    Infograph{" "}
+                    <FiExternalLink className="ml-1" color="white" size={15} />
                   </Link>{" "}
                   <span> Site Reliability Engineer Intern </span>
                 </p>
@@ -147,15 +147,13 @@ export default function Home() {
             <div className="job-container">
               <div className="job-position">
                 <p>
-                  <Link href="https://www.qmind.ca/" target="_blank">
-                    <div className="flex items-center">
-                      QMIND{" "}
-                      <FiExternalLink
-                        className="ml-1"
-                        color="white"
-                        size={15}
-                      />
-                    </div>
+                  <Link
+                    href="https://www.qmind.ca/"
+                    target="_blank"
+                    className="flex items-center"
+                  >
+                    QMIND{" "}
+                    <FiExternalLink className="ml-1" color="white" size={15} />
                   </Link>{" "}
                   <span> Smart Contract Developer </span>
                 </p>
@@ -165,15 +163,13 @@ export default function Home() {
             <div className="job-container">
               <div className="job-position">
                 <p>
-                  <Link href="https://infograph.com.jo/" target="_blank">
-                    <div className="flex items-center">
-                      Infograph{" "}
-                      <FiExternalLink
-                        className="ml-1"
-                        color="white"
-                        size={15}
-                      />
-                    </div>
+                  <Link
+                    href="https://infograph.com.jo/"
+                    target="_blank"
+                    className="flex items-center"
+                  >
+                    Infograph{" "}
+                    <FiExternalLink className="ml-1" color="white" size={15} />
                   </Link>{" "}
                   <span> Frontend Engineer Intern </span>
                 </p>
@@ -238,6 +234,127 @@ export default function Home() {
               <p class="skill-item">Firebase</p>
             </div>
           </div>
+          {/* <div className="divider mb-10" /> */}
+          <h2 className="subheading mb-5">Projects</h2>
+
+          <div className="project-container">
+            <Link
+              className="project-header"
+              target="_blank"
+              href="https://github.com/mustafa-tariqk/blockchain-medical-record"
+            >
+              MedRec <FaArrowRight className="right-arrow" />{" "}
+            </Link>
+            <p className="project-desc">
+              Programmed smart contracts in Solidity as part of the blockchain
+              design team to build a medical record system on the Ethereum
+              blockchain. Implemented a Python-based AI for smart diagnosis
+              predictions and integrated data visualizations.
+            </p>
+
+            <div className="flex mt-5">
+              <div className="tech-stack">Solidity</div>
+              <div className="tech-stack">Python</div>
+              <div className="tech-stack">scikit-learn</div>
+              <div className="tech-stack">Truffle</div>
+            </div>
+          </div>
+
+          <div className="project-container">
+            <Link
+              className="project-header"
+              target="_blank"
+              href="https://exchange-slotting.vercel.app/"
+            >
+              Exchange Slotting Program <FaArrowRight className="right-arrow" />{" "}
+            </Link>
+            <p className="project-desc">
+              Developed a web application using Typescript and Next.js to
+              enhance the slotting process for the international programs office
+              at Queen&apos;s University. Features include CSV parsing, Firebase
+              authentication, and a sophisticated ranking system, benefiting
+              over 500 exchange students. Ensured robustness with 60+ unit tests
+              covering core functionalities.
+            </p>
+
+            <div className="flex mt-5">
+              <div className="tech-stack">Next.js</div>
+              <div className="tech-stack">React</div>
+              <div className="tech-stack">TypeScript</div>
+              <div className="tech-stack">Firebase</div>
+              <div className="tech-stack">Zustand</div>
+            </div>
+          </div>
+
+          <div className="project-container">
+            <Link
+              className="project-header"
+              target="_blank"
+              href="https://github.com/KhalilJouaneh/XRPL-GPT"
+            >
+              XRP Ledger GPT <FaArrowRight className="right-arrow" />{" "}
+            </Link>
+            <p className="project-desc">
+              An interactive chatbot utilizing GPT-4, designed specifically for
+              the XRP Ledger codebase. XRPL-GPT provides in-depth responses
+              about the XRP Ledger's workings, linking directly to code
+              references. Aimed at enhancing the developer experience, the
+              system merges the core querying flow and UI from chatlangchain-js.
+            </p>
+
+            <div className="flex mt-5">
+              <div className="tech-stack">Next.js</div>
+              <div className="tech-stack">React</div>
+              <div className="tech-stack">TypeScript</div>
+              <div className="tech-stack">Docker</div>
+              <div className="tech-stack">chatlangchain-js</div>
+              <div className="tech-stack">OpenAI API</div>
+            </div>
+          </div>
+
+          <div className="project-container">
+            <Link
+              className="project-header"
+              target="_blank"
+              href="https://docs.carbovalent.com/"
+            >
+              Carbovalent <FaArrowRight className="right-arrow" />{" "}
+            </Link>
+            <p className="project-desc">
+              Developed the Carbovalent Protocol to enable the direct
+              tokenization of carbon credits as NFTs on the Solana blockchain
+              during the Solana Sandstrom hackathon.
+            </p>
+
+            <div className="flex mt-5">
+              <div className="tech-stack">Next.js</div>
+              <div className="tech-stack">TypeScript</div>
+              <div className="tech-stack">Rust</div>
+              <div className="tech-stack">GraphQL</div>
+              <div className="tech-stack">TailwindCSS</div>
+              <div className="tech-stack">Metaplex</div>
+            </div>
+          </div>
+
+          <div className="project-container">
+            <Link className="project-header" target="_blank" href="https://github.com/KhalilJouaneh/Climate-Risk-Visualization-">
+              Climate Risk Visualization
+              <FaArrowRight className="right-arrow" />{" "}
+            </Link>
+            <p className="project-desc">
+              Created a website that dynamically displays climate risk data
+              through interactive maps, tables, and charts, offering users a
+              comprehensive visual understanding of evolving environmental
+              challenges.
+            </p>
+
+            <div className="flex mt-5">
+              <div className="tech-stack">Next.js</div>
+              <div className="tech-stack">React</div>
+              <div className="tech-stack">chart.js</div>
+              <div className="tech-stack">Rest APIs</div>
+            </div>
+          </div>
 
           <div className="divider" />
 
@@ -298,6 +415,14 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="footer">
+          <span className="footer-text-left">KhalilJouaneh</span>
+          <hr className="footer-line" />
+          <span className="footer-text-right">
+            @2023 KhalilJouaneh copyright. All Rights Reserved
+          </span>
         </div>
       </div>
     </>
