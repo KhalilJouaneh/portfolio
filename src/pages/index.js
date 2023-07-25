@@ -65,7 +65,9 @@ export default function Home() {
               <Link href="#work">Work</Link>
               <Link href="#skills">Skills</Link>
               <Link href="#projects">Projects</Link>
-              <Link href="/">Resume</Link>
+              <Link href="/resume.pdf" target="_blank">
+                Resume
+              </Link>
               <Link href="#contact">Contact</Link>
             </div>
           </div>
@@ -179,7 +181,9 @@ export default function Home() {
 
           {/* <div className="divider" /> */}
 
-          <h2 className="subheading mb-5" id="skills">Technical Skills</h2>
+          <h2 className="subheading mb-5" id="skills">
+            Technical Skills
+          </h2>
           <div class="skills-container mt-[20px]">
             <div class="skill-column">
               <p class="skill-heading">Languages</p>
@@ -234,7 +238,9 @@ export default function Home() {
             </div>
           </div>
           {/* <div className="divider mb-10" /> */}
-          <h2 className="subheading mb-5" id="projects">Projects</h2>
+          <h2 className="subheading mb-5" id="projects">
+            Projects
+          </h2>
 
           <div className="project-container">
             <Link
@@ -336,7 +342,11 @@ export default function Home() {
           </div>
 
           <div className="project-container">
-            <Link className="project-header" target="_blank" href="https://github.com/KhalilJouaneh/Climate-Risk-Visualization-">
+            <Link
+              className="project-header"
+              target="_blank"
+              href="https://github.com/KhalilJouaneh/Climate-Risk-Visualization-"
+            >
               Climate Risk Visualization
               <FaArrowRight className="right-arrow" />{" "}
             </Link>
@@ -357,7 +367,9 @@ export default function Home() {
 
           <div className="divider" />
 
-          <h2 className="subheading mb-5" id="contact">Contact</h2>
+          <h2 className="subheading mb-5" id="contact">
+            Contact
+          </h2>
           <div class="contact-container">
             <div class="contact-item">
               <FaTwitter size={20} />
