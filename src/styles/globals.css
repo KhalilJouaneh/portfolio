@@ -8,7 +8,7 @@
 
 .everything {
   background-color: rgba(17, 17, 17, 255);
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -117,5 +117,42 @@
 }
 
 .work-intro span {
-  color: #f0f0f0
+  color: #f0f0f0;
+}
+
+.job-container {
+  display: flex;
+  justify-content: space-between; /* Distribute child elements with maximum space in-between */
+  align-items: center; /* Vertically align the child elements in the center */
+  padding: 10px; /* Just for a little spacing, optional */
+  margin-top: 10px;
+}
+
+.job-position {
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: flex-start; /* Align child elements to the left */
+}
+
+.job-position p,
+.job-position span {
+  display: block; /* Make both p and span display as block elements */
+  margin: 0; /* Remove default margin */
+}
+
+.job-position p {
+  font-weight: 600; /* Make the company name bold */
+  font-size: 17px;
+}
+
+.job-position span {
+  font-size: 15px;
+  color: #969696;
+}
+
+.job-date {
+  font-size: 13px;
+  color: #969696;
+  font-weight: 600;
+  align-items: center;
 }

@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import { FaMapPin } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 // import CursorBalls from "../components/cursorBalls";
 
 export default function Home() {
@@ -83,7 +84,105 @@ export default function Home() {
               open source & was part of the blockhain design team at
               Queen&apos;s University.
             </p>
+
+            <h2 className="subheading mb-5">Jobs</h2>
+            <div className="job-container">
+              <div className="job-position">
+                <p>
+                  <Link href="https://alphaline.wtf/" target="_blank">
+                    <div className="flex items-center">
+                      Alphaline{" "}
+                      <FiExternalLink
+                        className="ml-1"
+                        color="white"
+                        size={15}
+                      />
+                    </div>
+                  </Link>
+                  <span>
+                    {" "}
+                    co-founder, full-stack developer & data engineer{" "}
+                  </span>
+                </p>
+              </div>
+              <p className="job-date">Mar 2023 - Present</p>
+            </div>
+            <div className="job-container">
+              <div className="job-position">
+                <p>
+                  <Link href="https://helius.xyz/" target="_blank">
+                    <div className="flex items-center">
+                      Helius{" "}
+                      <FiExternalLink
+                        className="ml-1"
+                        color="white"
+                        size={15}
+                      />
+                    </div>
+                  </Link>{" "}
+                  <span> Developer Relations </span>
+                </p>
+              </div>
+              <p className="job-date">Jan 2023 - Present</p>
+            </div>
+            <div className="job-container">
+              <div className="job-position">
+                <p>
+                  <Link href="https://infograph.com.jo/" target="_blank">
+                    <div className="flex items-center">
+                      Infograph{" "}
+                      <FiExternalLink
+                        className="ml-1"
+                        color="white"
+                        size={15}
+                      />
+                    </div>
+                  </Link>{" "}
+                  <span> Site Reliability Engineer Intern </span>
+                </p>
+              </div>
+              <p className="job-date">May - Aug 2022</p>
+            </div>
+            <div className="job-container">
+              <div className="job-position">
+                <p>
+                  <Link href="https://www.qmind.ca/" target="_blank">
+                    <div className="flex items-center">
+                      QMIND{" "}
+                      <FiExternalLink
+                        className="ml-1"
+                        color="white"
+                        size={15}
+                      />
+                    </div>
+                  </Link>{" "}
+                  <span> Smart Contract Developer </span>
+                </p>
+              </div>
+              <p className="job-date">Sept - Aug 2022</p>
+            </div>
+            <div className="job-container">
+              <div className="job-position">
+                <p>
+                  <Link href="https://infograph.com.jo/" target="_blank">
+                    <div className="flex items-center">
+                      Infograph{" "}
+                      <FiExternalLink
+                        className="ml-1"
+                        color="white"
+                        size={15}
+                      />
+                    </div>
+                  </Link>{" "}
+                  <span> Frontend Engineer Intern </span>
+                </p>
+              </div>
+              <p className="job-date">May - Aug 2021</p>
+            </div>
           </div>
+
+          <h2 className="subheading mb-5">Skills</h2>
+          <h2 className="subheading mb-5">Contact</h2>
         </div>
       </div>
     </>
