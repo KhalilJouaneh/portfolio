@@ -23,7 +23,7 @@ export default function Home() {
           content="Khalil Jouaneh's developer portfolio"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
           href="https://fonts.googleapis.com/css2?Noto+Sans:wght@500&family=Poppins&display=swap"
           rel="stylesheet"
@@ -181,62 +181,6 @@ export default function Home() {
 
           {/* <div className="divider" /> */}
 
-          <h2 className="subheading mb-5" id="skills">
-            Technical Skills
-          </h2>
-          <div class="skills-container mt-[20px]">
-            <div class="skill-column">
-              <p class="skill-heading">Languages</p>
-              <p class="skill-item">JavaScript</p>
-              <p class="skill-item">Typescript</p>
-              <p class="skill-item">Python</p>
-              <p class="skill-item">Rust</p>
-              <p class="skill-item">Solidity</p>
-              <p class="skill-item">PHP</p>
-              <p class="skill-item">Java</p>
-              <p class="skill-item">SQL</p>
-              <p class="skill-item">HTML/CSS</p>
-            </div>
-
-            <div class="skill-column">
-              <p class="skill-heading">Frameworks</p>
-              <p class="skill-item">React</p>
-              <p class="skill-item">Next.js</p>
-              <p class="skill-item">Svelte</p>
-              <p class="skill-item">Vue</p>
-              <p class="skill-item">Angular</p>
-              <p class="skill-item">jQuery</p>
-              <p class="skill-item">TailwindCSS</p>
-              <p class="skill-item">Bootstrap</p>
-              <p class="skill-item">Flask</p>
-            </div>
-
-            <div class="skill-column">
-              <p class="skill-heading">Technologies</p>
-              <p class="skill-item">Node.js</p>
-              <p class="skill-item">GraphQL</p>
-              <p class="skill-item">Elasticsearch</p>
-              <p class="skill-item">PostgreSQL</p>
-              <p class="skill-item">MongoDB</p>
-              <p class="skill-item">MsSQL</p>
-              <p class="skill-item">Redux</p>
-              <p class="skill-item">Prisma</p>
-              <p class="skill-item">Kafka</p>
-            </div>
-
-            <div class="skill-column">
-              <p class="skill-heading">DevOps</p>
-              <p class="skill-item">Docker</p>
-              <p class="skill-item">AWS</p>
-              <p class="skill-item">Kubernetes</p>
-              <p class="skill-item">Vercel</p>
-              <p class="skill-item">GitHub Actions</p>
-              <p class="skill-item">Google Cloud Platform </p>
-              <p class="skill-item">Fly</p>
-              <p class="skill-item">Terraform</p>
-              <p class="skill-item">Firebase</p>
-            </div>
-          </div>
           {/* <div className="divider mb-10" /> */}
           <h2 className="subheading mb-5" id="projects">
             Projects
@@ -362,6 +306,63 @@ export default function Home() {
               <div className="tech-stack">React</div>
               <div className="tech-stack">chart.js</div>
               <div className="tech-stack">Rest APIs</div>
+            </div>
+          </div>
+
+          <h2 className="subheading mb-5" id="skills">
+            Technical Skills
+          </h2>
+          <div class="skills-container mt-[20px]">
+            <div class="skill-column">
+              <p class="skill-heading">Languages</p>
+              <p class="skill-item">JavaScript</p>
+              <p class="skill-item">Typescript</p>
+              <p class="skill-item">Python</p>
+              <p class="skill-item">Rust</p>
+              <p class="skill-item">Solidity</p>
+              <p class="skill-item">PHP</p>
+              <p class="skill-item">Java</p>
+              <p class="skill-item">SQL</p>
+              <p class="skill-item">HTML/CSS</p>
+            </div>
+
+            <div class="skill-column">
+              <p class="skill-heading">Frameworks</p>
+              <p class="skill-item">React</p>
+              <p class="skill-item">Next.js</p>
+              <p class="skill-item">Svelte</p>
+              <p class="skill-item">Vue</p>
+              <p class="skill-item">Angular</p>
+              <p class="skill-item">jQuery</p>
+              <p class="skill-item">TailwindCSS</p>
+              <p class="skill-item">Bootstrap</p>
+              <p class="skill-item">Flask</p>
+            </div>
+
+            <div class="skill-column">
+              <p class="skill-heading">Technologies</p>
+              <p class="skill-item">Node.js</p>
+              <p class="skill-item">GraphQL</p>
+              <p class="skill-item">Elasticsearch</p>
+              <p class="skill-item">PostgreSQL</p>
+              <p class="skill-item">MongoDB</p>
+              <p class="skill-item">MsSQL</p>
+              <p class="skill-item">Redux</p>
+              <p class="skill-item">Prisma</p>
+              <p class="skill-item">Kafka</p>
+            </div>
+
+            <div class="skill-column">
+              <p class="skill-heading">DevOps</p>
+              <p class="skill-item">Docker</p>
+              <p class="skill-item">AWS</p>
+              <p class="skill-item">Kubernetes</p>
+              <p class="skill-item">Vercel</p>
+              <p class="skill-item">GitHub Actions</p>
+              <p class="skill-item">GCP </p>
+              <p class="skill-item">Fly</p>
+              <p class="skill-item">Terraform</p>
+              <p class="skill-item">Firebase</p>
             </div>
           </div>
 
