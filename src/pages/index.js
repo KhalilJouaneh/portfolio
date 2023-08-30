@@ -12,8 +12,49 @@ import {
   FaMailBulk,
   FaArrowRight,
 } from "react-icons/fa";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [isInCooldown, setIsInCooldown] = useState(false);
+
+  const defaults = {
+    spread: 360,
+    ticks: 100,
+    gravity: 0,
+    decay: 0.94,
+    startVelocity: 30,
+  };
+
+  function shoot() {
+    if (isInCooldown) return; // If in cooldown, exit the function
+
+    setIsInCooldown(true); // Set the cooldown flag
+
+    window.confetti({
+      ...defaults,
+      particleCount: 50,
+      scalar: 1.2,
+      shapes: ["circle", "square"],
+      colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"],
+    });
+
+    window.confetti({
+      ...defaults,
+      particleCount: 20,
+      scalar: 2,
+      shapes: ["text"],
+      // shapeOptions: {
+      //   text: {
+      //     value: [""],
+      //   },
+      // },
+    });
+
+    setTimeout(() => {
+      setIsInCooldown(false); // Reset the cooldown flag after a specified duration
+    }, 200); // 2000ms (2 seconds) cooldown. Adjust as needed.
+  }
+
   return (
     <>
       <Head>
@@ -28,6 +69,10 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?Noto+Sans:wght@500&family=Poppins&display=swap"
           rel="stylesheet"
         />
+        <script
+          async
+          src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"
+        ></script>
       </Head>
       <div className="everything">
         <Navbar />
@@ -37,6 +82,7 @@ export default function Home() {
             width={150}
             height={100}
             className="degen-ape"
+            onClick={shoot}
           />
 
           <h1 className="name-heading">KhalilJouaneh</h1>
@@ -44,8 +90,9 @@ export default function Home() {
           <div className="intro-location-container">
             <div>
               <p className="intro">
-                Hi, I'm a fresh Computer Science graduate with a passion for
-                full-stack development, data engineering & optimizing UI/UX.{" "}
+                Hi, I'm a fresh Computer Science graduate from Queen's
+                University with a passion for full-stack development, data
+                engineering & optimizing UI/UX.{" "}
                 <span>
                   Here is a bit of my background, professional experience, and
                   some projects I&apos;ve worked on, and answers to questions
@@ -87,10 +134,9 @@ export default function Home() {
               >
                 alphaline.wtf
               </Link>
-              .<span> Previously</span>, I built a regenerative finance
-              protocol, interned as a site reliability enginer, contributed to
-              open source & was part of the blockhain design team at
-              Queen&apos;s University.
+              .<span> Previously</span>, I built a credit score explorer,
+              interned as a full stack enginer, contributed to open source & was
+              part of the blockhain design team at Queen&apos;s University.
             </p>
 
             <h2 className="subheading mb-5">Jobs</h2>
@@ -107,7 +153,7 @@ export default function Home() {
                   </Link>
                   <span>
                     {" "}
-                    co-founder, full-stack developer & data engineer{" "}
+                    Full-Stack Developer & Data Engineer{" "}
                   </span>
                 </p>
               </div>
@@ -140,7 +186,7 @@ export default function Home() {
                     Infograph{" "}
                     <FiExternalLink className="ml-1" color="white" size={15} />
                   </Link>{" "}
-                  <span> Site Reliability Engineer Intern </span>
+                  <span> Full Stack Engineer Intern </span>
                 </p>
               </div>
               <p className="job-date">May - Aug 2022</p>
@@ -161,7 +207,7 @@ export default function Home() {
               </div>
               <p className="job-date">Sept - Aug 2022</p>
             </div>
-            <div className="job-container">
+            {/* <div className="job-container">
               <div className="job-position">
                 <p>
                   <Link
@@ -176,7 +222,7 @@ export default function Home() {
                 </p>
               </div>
               <p className="job-date">May - Aug 2021</p>
-            </div>
+            </div> */}
           </div>
 
           {/* <div className="divider" /> */}
