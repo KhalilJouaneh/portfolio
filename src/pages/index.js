@@ -78,7 +78,7 @@ export default function Home() {
         <Navbar />
         <div className="main-container">
           <Image
-            src="/degenApe.jpg"
+            src="/matrix.webp"
             width={150}
             height={100}
             className="degen-ape"
@@ -91,8 +91,8 @@ export default function Home() {
             <div>
               <p className="intro">
                 Hi, I'm a fresh Computer Science graduate from Queen's
-                University with a passion for full-stack development, data
-                engineering & optimizing UI/UX.{" "}
+                University with a passion for building consumer facing
+                applications, data engineering & full stack development.{" "}
                 <span>
                   Here is a bit of my background, professional experience, and
                   some projects I&apos;ve worked on, and answers to questions
@@ -124,23 +124,16 @@ export default function Home() {
           <div className="work-container" id="work">
             <h2 className="subheading"> Work </h2>
             <p className="work-intro">
-              <span>Presently</span>, I'm spearheading a startup, backed by an
-              accelerator, that aims to bridge the gap between traditional
-              finance & decentralized infrastructure at{" "}
-              <Link
-                href="https://www.alphaline.wtf/"
-                target="_blank"
-                className="border-b-[1px] border-current pb-[-1px] opacity-[0.99]"
-              >
-                alphaline.wtf
-              </Link>
-              .<span> Previously</span>, I built a credit score explorer,
-              interned as a full stack enginer, contributed to open source & was
+              <span>Presently</span>, I'm on the lookout for a full-time
+              software engineering role at a dynamic startup or established tech
+              company. My background is rich with hands-on experience. 
+              <span> Previously</span>, I built a credit score explorer,
+              interned as a software & frontend engineer, made significant contributions to open source projects & was
               part of the blockhain design team at Queen&apos;s University.
             </p>
 
             <h2 className="subheading mb-5">Jobs</h2>
-            <div className="job-container">
+            {/* <div className="job-container">
               <div className="job-position">
                 <p>
                   <Link
@@ -158,38 +151,22 @@ export default function Home() {
                 </p>
               </div>
               <p className="job-date">Mar 2023 - Present</p>
-            </div>
+            </div> */}
             <div className="job-container">
               <div className="job-position">
                 <p>
                   <Link
-                    href="https://helius.xyz/"
+                    href="https://www.qmind.ca/"
                     target="_blank"
                     className="flex items-center"
                   >
-                    Helius{" "}
+                    QMIND{" "}
                     <FiExternalLink className="ml-1" color="white" size={15} />
                   </Link>{" "}
-                  <span> Developer Relations </span>
+                  <span> Software Engineer Intern </span>
                 </p>
               </div>
-              <p className="job-date">Jan 2023 - Present</p>
-            </div>
-            <div className="job-container">
-              <div className="job-position">
-                <p>
-                  <Link
-                    href="https://infograph.com.jo/"
-                    target="_blank"
-                    className="flex items-center"
-                  >
-                    Infograph{" "}
-                    <FiExternalLink className="ml-1" color="white" size={15} />
-                  </Link>{" "}
-                  <span> Full Stack Engineer Intern </span>
-                </p>
-              </div>
-              <p className="job-date">May - Aug 2022</p>
+              <p className="job-date">May 2023 - Aug 2023</p>
             </div>
             <div className="job-container">
               <div className="job-position">
@@ -202,10 +179,10 @@ export default function Home() {
                     QMIND{" "}
                     <FiExternalLink className="ml-1" color="white" size={15} />
                   </Link>{" "}
-                  <span> Smart Contract Developer </span>
+                  <span> Frontend Engineer Intern </span>
                 </p>
               </div>
-              <p className="job-date">Sept - Aug 2022</p>
+              <p className="job-date">May 2022 - Aug 2022</p>
             </div>
             {/* <div className="job-container">
               <div className="job-position">
@@ -232,6 +209,31 @@ export default function Home() {
             Projects
           </h2>
 
+          <div className="project-container">
+            <Link
+              className="project-header"
+              target="_blank"
+              href="https://www.alphaline.wtf/"
+            >
+              Alphaline.wtf <FaArrowRight className="right-arrow" />{" "}
+            </Link>
+            <p className="project-desc">
+              Built multiple products under Alphaline. The first is a credit
+              score explorer that allows users to visualize their lending &
+              borrowing history on the blockchain. Additionally, alphaline
+              functions as a growth hacking tool for web3 companies, leveraging
+              on-chain action-based bounties and data analytics.
+            </p>
+
+            <div className="flex mt-5">
+              <div className="tech-stack">Next.js</div>
+              <div className="tech-stack">TypeScript</div>
+              <div className="tech-stack">PostgreSQL</div>
+              <div className="tech-stack">Prisma</div>
+              <div className="tech-stack">Redis</div>
+              <div className="tech-stack">GraphQL + Apollo</div>
+            </div>
+          </div>
           <div className="project-container">
             <Link
               className="project-header"
